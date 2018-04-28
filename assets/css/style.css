@@ -1,0 +1,332 @@
+/* css styling page for portfolio */
+
+/* this element defines how the width and height of an element are calculated */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-width: 100%;
+    min-height: 100%;
+    background-position: top center;
+}
+
+body {
+    background: url("../../assets/images/paper.jpg");
+    font-size: 18px;
+    line-height: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+}
+
+.links {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+
+/*#### NAVIGATION ###*/
+
+/* Changes the color when hovering over navigation links*/
+
+a:hover {
+    color: #4aaaa5;
+}
+
+/* these selector's are used to color and style nav fonts*/
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: #777777;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #cccccc;
+    padding-bottom: 20px;
+    color: #4aaaa5;
+}
+
+h2,
+h3 {
+    font-size: 22px;
+}
+
+/*#### NAVIGTION BAR ###
+/* these selectors are used for formatting and styling the naviagtion bar and fonts */
+
+#navi {
+    background: #ffffff;
+    margin: 0 0 30px;
+    z-index: 99;
+    color: #ffffff;
+    overflow: auto;
+    border-bottom: 2px solid #cccccc;
+    position: fixed;
+    width: 100%;
+}
+
+#my-name {
+    width: 250px;
+    height: 90px;
+    background: #4aaaa5;
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 90px;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+/* these selectors are used to color, style and format the navigation links */
+
+nav {
+    float: right;
+    margin-top: 25px;
+}
+
+nav a {
+    color: #a69a97;
+    text-decoration: none;
+    margin-left: 15px;
+    display: inline-block;
+    border-left: 1px solid #f1f0f1;
+    line-height: 18px;
+    padding-left: 14px;
+    margin-left: 14px;
+}
+
+nav a:first-child {
+    border-left: 0 none;
+}
+
+/*### MAIN CONTAINER 
+---------------------*/
+
+/* this selector sets the format for the main container on all pages */
+
+#main-container {
+    height: 880px;
+    padding-top: 130px;
+    width: 960px;
+}
+
+/* ### Index.html and contact.html MAIN SECTION */
+
+/* this selector helps arrange/format the content inside the main container on the index.html
+and contact pages */
+
+.main-section {
+    background: #ffffff;
+    padding: 30px;
+    height: 600px;
+    width: 200%;
+    max-width: 960px;
+    float: left;
+    border: 1px solid #dddddd;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: #777777;
+    margin-top: 15px;
+}
+
+.img-jared {
+    width: 200px;
+    height: auto;
+    margin: 25px 25px 0px 0px;
+    border-radius: 10px;
+    float: left;
+}
+
+footer {
+    clear: both;
+    overflow: auto;
+    background: #666666;
+    color: #777777;
+    border-top: 8px solid #4aaaa5;
+    color: #cccccc;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* ### Contact page selectors */
+
+/* these selectors set the spacing for the input elements in the container */
+
+#input-text ul {
+    margin-bottom: 20px;
+}
+
+#input-text li {
+    margin-bottom: 10px;
+}
+
+/* these selectors style and format our input elements */
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+    display: block;
+    width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    height: 35px;
+    border: 1px soild #dddddd;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 200px;
+    padding: 10px;
+}
+
+input[type=submit] {
+    background: #4aaaa5;
+    border: 0 none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* ### Portfolio page selectors */
+
+.portfolio-section {
+    background: #ffffff;
+    padding: 30px;
+    max-width: 960px;
+    float: left;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.ports {
+    width: 274px;
+    overflow: auto;
+    position: relative;
+    float: left;
+    margin: 20px 0 25px;
+}
+
+/* this selector selector matches every element 
+that is the nth child, regardless of type, of its parent. */
+
+.ports:nth-child(even) {
+    margin-right: 40px;
+}
+
+/* these selectors style and format the portfolio images */
+
+/* I made all the gifs with my phone using an app. 
+    Then transfered them into myimages folder
+    --------------------------------------*/
+
+.ports img {
+    width: 100%;
+    height: 100%;
+    border: 0 none;
+    opacity: .8;
+    border-radius: 10px;
+}
+
+.ports h3 {
+    border-bottom: 0;
+    background: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    bottom: 21px;
+    padding: 15px;
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-weight: 300;
+    opacity: .7;
+}
+
+/*###! Media Query's !###*/
+
+@media only screen and (max-width: 980px) {
+    .links {
+        max-width: 728px;
+    }
+    #portfolio-section {
+        max-width: 728px;
+    }
+    .main-section {
+        max-width: 728px;
+        height: 1000px;
+    }
+}
+
+@media only screen and (max-width: 762px) {
+    .links {
+        max-width: 100%;
+        padding: 0 20px 0 20px;
+    }
+    #portfolio-section {
+        max-width: 100%;
+        padding: 0 20px 0 20px;
+        margin-bottom: 1000px;
+    }
+    .main-section {
+        padding-right: 20px;
+        max-width: 100%;
+        height: 140%;
+    }
+    #main-container {
+        height: 1250px;
+    }
+    .img-jared {
+        width: 47%;
+        height: 30%px;
+    }
+    .ports {
+        width: 47%;
+        height: 30%px;
+    }
+    .ports:nth-child(even) {
+        margin-right: 10px;
+        ;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #my-name {
+        text-align: center;
+        width: 100%;
+        margin: 15px;
+    }
+    nav {
+        text-align: center;
+        width: 100%;
+        margin: 15px;
+    }
+    nav a {
+        width: 20%;
+    }
+}
